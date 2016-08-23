@@ -138,30 +138,6 @@ class TodolistsController extends Controller
     }
 
 
-    /*public function getCustomFilter()
-    {
-        return view('datatable.custom-filter');
-    }
-
-    public function getCustomFilterData(Request $request)
-    {
-        $todolists = Todolist::with('user')->where('user_id', Auth::user()->id);
-
-        //dd($request);
-
-        return Datatables::of($todolists)
-            ->filter(function ($query) use ($request) {
-                if ($request->has('start_date')) {
-                    $query->where('start_date', '=', $request->get('start_date'));
-                }
-
-                if ($request->has('end_date')) {
-                   $query->where('end_date', '=', $request->get('end_date'));
-                }
-            })->make(true);
-
-
-             return view('datatable.custom-filter');
-    }*/
+    
 
 }
