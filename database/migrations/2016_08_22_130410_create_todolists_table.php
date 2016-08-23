@@ -18,6 +18,7 @@ class CreateTodolistsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->timestamps();
+            $table->enum('Y','T');
             $table->date('start_date');
             $table->date('end_date');
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
