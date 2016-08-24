@@ -17,7 +17,7 @@
 
         <?php 
             date_default_timezone_set("Asia/Jakarta");;
-            $tanggalsekarang = date('Y-m-d');
+            $tanggalsekarang2 = date('Y-m-d');
             ?>
         @foreach ($todolists2 as $tdl)
             <?php 
@@ -27,7 +27,7 @@
 
             ?>
 
-                @if ($tanggalstart == $tanggalsekarang)
+                @if ($tanggalstart == $tanggalsekarang2)
                     @if($completed=="T")
                         @include ('layouts._flashnotif')
                     @endif
